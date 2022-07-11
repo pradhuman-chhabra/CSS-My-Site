@@ -1,0 +1,214 @@
+body{
+  margin:0;
+  text-align: center;
+  /* font-family: "Helvetica-Neue",Helvetica,Arial,sans-serif; */
+  font-family: "Merriweather",serif;
+}
+/* the above one will make it 0 for al 4 sides */
+/* but h1 mein abhi bhie thoda margin hai uske liye h1 ka alg se margin 0 karna padhega */
+
+p{
+  line-height:2;
+}
+
+/* So one of the things I added here was to make the line height double what it used to be and that spaces out the text and makes it a lot easier to read. Now I'd like to do that consistently across my web site, so for the intro as well as the other parts of text. So instead of having that line-height down in the skill-row section, I'm actually going to cut that and add that to a paragraph level CSS rule. So I'm targeting all the paragraphs inside my web site and I'm changing all of their line-heights to double the height that it used to be. */
+
+h1{
+  /*
+  video no-53
+
+  font-size:562.5%;  this is a dynamic font size
+  font-size:562.5em;  this is m2 for dynamic font size
+
+  */
+
+  color:#66BFBF;
+  font-size:5.625rem;/*this is the best method to make dynamic font size*/
+  line-height:2;
+  margin: 50px auto 0 auto;/*clockwise top right bottom left*/
+  font-family: "Sacramento",cursive;
+}
+h2{
+  color:#66BFBF;
+  font-family: "Montserrat",sans-serif;
+  font-size:2.5rem;
+  font-weight: normal;
+}
+
+a{
+  color: #11999E;
+  font-family: "Montserrat",sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+a:hover{
+  color: #EAf6f6;
+}
+/* this will change the color of the links when we are hovering onto them */
+
+h3{
+  color:#11999E;
+  font-family: "Montserrat",sans-serif;
+}
+/* video no-49 */
+/*
+h1{
+  margin-top:0;
+  width: auto;
+}
+*/
+/* width: auto; this will make the text center aligned */
+
+/*
+h1{
+  width: 10%;
+  margin:0 auto;
+}
+*/
+/* when the width is specified for a block element then */
+/* here we'll use margin to centrally align the h1 tag */
+/* Video No-49 */
+
+hr{
+  /* width: 100%; */
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  margin: 100px auto;
+  width:4%;
+}
+
+.top-container{
+  background-color: #E4F9F5;
+  position: relative;
+  /* video no_49 , this will */
+  padding-top: 100px;
+  /*
+  .bottom-cloud
+  .top-cloud
+  above these are the children tags of the top container
+  */
+}
+/*
+Video No 52 made me comment it
+.middle-container{
+  background-color: red;
+  width:200px;
+  height:200px;
+}
+.bottom-container{
+  background-color: blue;
+  width:200px;
+  height:200px;
+}
+*/
+
+.middle-container{
+  text-align: center;
+  margin:100px 0;/*100pxfor top and bottom and 0 for left and right */
+}
+.bottom-container{
+  text-align: center;
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+.intro{
+  width:30%;/* this will make the text take up only
+/*
+
+So, but the problem is now, it's left aligned and it's no longer in the center of our web page,
+and that's because it's no longer edge to edge and we now have to set the margin to
+auto in order to get it to be centered in the web page, which is exactly what we want.
+So I'm going to go ahead and add a margin property and just set it to auto on all four sides.
+
+*/
+margin:auto;
+/* This will make the margin centerd on all 4 sides */
+}
+
+.skill-row{
+  width:50%;
+  /* text-align: center; this will not work to center a box to center a box use margin:auto; */
+  margin:100px auto 100px auto;
+  text-align: left;
+  /* line-height: 2; */
+}
+/* So one of the things I added here was to make the line height double what it used to be and that spaces out the text and makes it a lot easier to read. Now I'd like to do that consistently across my web site, so for the intro as well as the other parts of text. So instead of having that line-height down in the skill-row section, I'm actually going to cut that and add that to a paragraph level CSS rule. So I'm targeting all the paragraphs inside my web site and I'm changing all of their line-heights to double the height that it used to be. */
+
+.coding{
+  width:25%;
+  float:left;
+  margin-right: 20px;
+}
+
+.painting{
+  width:25%;
+  float:right;
+  margin-left: 20px;
+}
+/*
+Video No- 58
+
+.coding_description{
+  clear: left;
+}
+.painting_description{
+  clear: right;
+}
+*/
+.pro{
+  text-decoration: underline;
+}
+.top-cloud{
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+/* Video no-49   absolute position take you out of the flow of the html document */
+.bottom-cloud{
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+.contact-message{
+  width:40%;
+  margin: 40px auto 40px;
+}
+/* vide no-49   absolute position take you out of the flow of the htm document */
+
+/* this will underline the text in the website text programmer */
+
+
+.copyright{
+  color:#EAF6F6;
+  font-size: 0.75rem;
+  padding:20px 0;/*20px top and bottom and 0 pixel left and right */
+}
+
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Montserrat",sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
